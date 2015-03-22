@@ -1,0 +1,64 @@
+body{
+    padding: 10px;
+}
+
+.panel {
+    max-width: 500px;
+    min-width: 300px;
+    margin: 100px auto;
+}
+
+form {
+    padding: 15px 10px;
+}
+
+.form-control{
+    border: none;
+    padding: 0;
+    -webkit-box-shadow: none !important;
+    -moz-box-shadow: none !important;
+    box-shadow: none !important;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+}
+
+.form-control.ng-invalid,
+.ng-submitted .form-control.ng-invalid{
+    border-bottom:1px solid #900;
+}
+
+.form-control.ng-valid{
+    border-bottom:1px solid #264;
+}
+
+.form-control.ng-pristine{
+    border-bottom: 1px solid #000;
+}
+
+form .form-group {
+    position: relative;
+    padding-top: 15px;
+}
+
+.form-control::-webkit-input-placeholder {
+    color: #333;
+}
+
+.form-control:-moz-placeholder {
+    color: #333;
+}
+
+.form-control::-moz-placeholder {
+    color: #333;
+}
+
+.form-control:-ms-input-placeholder {
+    color: #333;
+}
+
+@media only screen and (max-device-width: 640px){
+    .panel {
+        margin: auto;
+    }
+}
