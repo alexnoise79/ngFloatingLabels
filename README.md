@@ -1,8 +1,10 @@
-ngFloatingLabels + validation
+ngFloatingLabels + ngFloatingValidation
 ======================
 
 # Description
 ---------
+
+
 ###This module has two directives
 - `floatingValidation`
   - which listen for angular validation events and show/hide the floated label
