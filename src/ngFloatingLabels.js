@@ -1,5 +1,8 @@
 /**
- * Created by AlexNoise on 20/03/2015.
+ *  @author Alex Vitari alexnoise79@gmail.com
+ *  @description this module contains two directives which permits to validate and show labels through the floating label pattern.
+ *  @global messages is a collection of labels to simplify the import from locale variables
+ *  @see https://github.com/angular/bower-angular-i18n for details
  */
 
 'use strict';
