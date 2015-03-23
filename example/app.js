@@ -15,8 +15,20 @@ var messages = {
     minlength: "min length of @value@ characters",
     pattern: "don\'t match the pattern",
     "email": "mail address not valid",
-    "number": "insert only numbers"
+    "number": "insert only numbers",
+    "custom" : "custom not valid type \"@value@\""
 };
 
 
-var floatingLabelsDemo = angular.module('floatingLabelsDemo', ['ngFloatingLabels']);
+var app = angular.module('app', ['ngFloatingLabels']);
+
+app.directive('customValidator', function() {
+    return {
+        require : 'ngModel',
+        link : function(scope, element, attrs, ngModel) {
+            ngModel.$validators.custom = function(value) {
+                return value === "ciao";
+            };
+        }
+    };
+});
