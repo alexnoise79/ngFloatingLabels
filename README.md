@@ -34,6 +34,7 @@ Floating Validation and Labels for AngularJS
     ```html
     <input type="text" placeholder="Simple Text" id="simpleText" name="simpleText" ng-model="simpleText" required floating-validation/>
     ```
+
 #### attribute placeholder is *REQUIRED*
 #### the parent div of the input field must be ```position:relative``` (see example for detail)
 
