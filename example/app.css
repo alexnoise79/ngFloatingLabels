@@ -57,6 +57,11 @@ form .form-group {
     color: #333;
 }
 
+.form-group input[type="checkbox"]{
+    margin: 0 -20px 0 10px;
+    vertical-align: middle;
+}
+
 @media only screen and (max-device-width: 640px){
     .panel {
         margin: auto;

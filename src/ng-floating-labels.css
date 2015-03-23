@@ -2,7 +2,7 @@
 .ng-invalid + .float{
     color: #900;
 }
-.ng-valid + .float{
+.ng-valid + .float, .ng-valid + .float + label{
     color: #080;
 }
 
@@ -14,6 +14,7 @@
     color: #264;
     pointer-events: none;
     top:100%;
+    left:0;
 }
 
 .float.top{
