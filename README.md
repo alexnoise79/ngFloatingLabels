@@ -19,21 +19,25 @@ Floating Validation and Labels for AngularJS
 #Usage
 ---------
 - import customizable css in your project
-    ```html
-    <link rel="stylesheet" href="src/ng-floating-labels.css">
-    ```
+
+```html
+<link rel="stylesheet" href="src/ng-floating-labels.css">
+```
 - import script in your page
-    ```html
-    <script src="src/ngFloatingLabels.js"></script>
-    ```
+
+```html
+<script src="src/ngFloatingLabels.js"></script>
+```
 - inject the module dependency
-    ```js
-    angular.module('yourProject', ['ngFloatingLabels']);
-    ```
+
+```js
+angular.module('yourProject', ['ngFloatingLabels']);
+```
 - include the directive on your input or select element
-    ```html
-    <input type="text" placeholder="Simple Text" id="simpleText" name="simpleText" ng-model="simpleText" required floating-validation/>
-    ```
+
+```html
+<input type="text" placeholder="Simple Text" id="simpleText" name="simpleText" ng-model="simpleText" required floating-validation/>
+```
 
 #### attribute placeholder is *REQUIRED*
 #### the parent div of the input field must be ```position:relative``` (see example for detail)
