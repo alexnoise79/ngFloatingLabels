@@ -36,6 +36,10 @@ form {
     border-bottom: 1px solid #000;
 }
 
+.form-control.ng-pending {
+    border-bottom: 1px solid #04f;
+}
+
 form .form-group {
     position: relative;
     padding-top: 15px;
@@ -60,6 +64,12 @@ form .form-group {
 .form-group input[type="checkbox"]{
     margin: 0 -20px 0 10px;
     vertical-align: middle;
+}
+
+.form-group.spinner i {
+    position: absolute;
+    top:0;
+    right:0;
 }
 
 @media only screen and (max-device-width: 640px){

@@ -6,6 +6,10 @@
     color: #080;
 }
 
+.ng-pending + .float{
+    color: #04f;
+}
+
 .float{
     /*the parent div must be position:relative */
     position: absolute;
