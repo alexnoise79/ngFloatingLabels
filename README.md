@@ -44,3 +44,4 @@ angular.module('yourProject', ['ngFloatingLabels']);
 
 Example
 ---------
+-http://alexnoise79.github.io/ngFloatingLabels
