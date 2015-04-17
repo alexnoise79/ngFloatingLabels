@@ -157,84 +157,87 @@
             <a id="example" class="anchor" href="#example" aria-hidden="true"><span class="octicon octicon-link"></span></a>Example
         </h2>
 
-        <div class="panel panel-primary">
-            <div class="panel-heading">
-                <h3>ngFloating Validation Demo</h3>
-            </div>
-            <div class="panel-body">
-                <form name="floating" class="form-vertical" novalidate
-                      ng-model-options="{updateOn:'default blur',debounce:{'default':500,'blur':0}}">
+        <div class="example" ng-app="app">
+            <div class="panel panel-primary">
+                <div class="panel-heading">
+                    <h3>ngFloating Validation Demo</h3>
+                </div>
+                <div class="panel-body">
+                    <form name="floating" class="form-vertical" novalidate
+                          ng-model-options="{updateOn:'default blur',debounce:{'default':500,'blur':0}}">
 
-                    <div class="form-group">
-                        <input type="text" class="form-control" placeholder="Simple Text" id="simpleText" name="simpleText"
-                               ng-model="simpleText" required
-                               floating-validation/>
-                    </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Simple Text" id="simpleText" name="simpleText"
+                                   ng-model="simpleText" required
+                                   floating-validation/>
+                        </div>
 
-                    <div class="form-group">
-                        <input type="text" class="form-control" placeholder="MinLength Text" id="minlenghtText" name="minlenghtText"
-                               ng-model="minlenghtText" required ng-minlength="3"
-                               floating-validation/>
-                    </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="MinLength Text" id="minlenghtText" name="minlenghtText"
+                                   ng-model="minlenghtText" required ng-minlength="3"
+                                   floating-validation/>
+                        </div>
 
-                    <div class="form-group">
-                        <input type="text" class="form-control" placeholder="Only special char" id="specialChar" name="specialChar"
-                               ng-model="specialChar" required ng-pattern="/^\W/"
-                               floating-validation/>
-                    </div>
-                    <div class="form-group">
-                        <input type="email" class="form-control" placeholder="Valid Email" id="validEmail" name="validEmail"
-                               ng-model="validEmail" required
-                               floating-validation/>
-                    </div>
-                    <div class="form-group">
-                        <input type="number" class="form-control" placeholder="Number" id="validNumber" name="validNumber"
-                               ng-model="validNumber" required
-                               floating-validation/>
-                    </div>
-                    <div class="form-group">
-                        <select class="form-control" ng-model="selectRequired" placeholder="Select Required" id="selectRequired" name="selectRequired"
-                                required
-                                floating-validation/>
-                        <option value="" disabled>Select Required</option>
-                        <option value="a">Value A</option>
-                        <option value="b">Value B</option>
-                        </select>
-                    </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Only special char" id="specialChar" name="specialChar"
+                                   ng-model="specialChar" required ng-pattern="/^\W/"
+                                   floating-validation/>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" class="form-control" placeholder="Valid Email" id="validEmail" name="validEmail"
+                                   ng-model="validEmail" required
+                                   floating-validation/>
+                        </div>
+                        <div class="form-group">
+                            <input type="number" class="form-control" placeholder="Number" id="validNumber" name="validNumber"
+                                   ng-model="validNumber" required
+                                   floating-validation/>
+                        </div>
+                        <div class="form-group">
+                            <select class="form-control" ng-model="selectRequired" placeholder="Select Required" id="selectRequired" name="selectRequired"
+                                    required
+                                    floating-validation/>
+                            <option value="" disabled>Select Required</option>
+                            <option value="a">Value A</option>
+                            <option value="b">Value B</option>
+                            </select>
+                        </div>
 
-                    <div class="form-group">
-                        <input type="text" class="form-control" placeholder="Simple Floating" ng-model="simpleFloating" id="simpleFloating"
-                               floating-label/>
-                    </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Simple Floating" ng-model="simpleFloating" id="simpleFloating"
+                                   floating-label/>
+                        </div>
 
-                    <div class="form-group">
-                        <input type="text" class="form-control" placeholder="Custom Validator" id="customValidator" name="customValidator"
-                               ng-model="customValidator"
-                               custom-validator custom="foo" required
-                               floating-validation />
-                    </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Custom Validator" id="customValidator" name="customValidator"
+                                   ng-model="customValidator"
+                                   custom-validator custom="foo" required
+                                   floating-validation />
+                        </div>
 
-                    <div class="form-group">
-                        <input type="text" class="form-control" placeholder="Async Validator" id="asyncValidator" name="asyncValidator"
-                               ng-model="asyncValidator"
-                               async-validator async="bar" required
-                               floating-validation />
-                    </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Async Validator" id="asyncValidator" name="asyncValidator"
+                                   ng-model="asyncValidator"
+                                   async-validator async="bar" required
+                                   floating-validation />
+                        </div>
 
-                    <div class="form-group">
-                        <input type="checkbox" placeholder="" ng-model="simpleCheckbox" id="simpleCheckbox" required
-                               floating-validation/>
-                        <label class="control-label checkbox-inline" for="simpleCheckbox">This Check is required</label>
-                    </div>
+                        <div class="form-group">
+                            <input type="checkbox" placeholder="" ng-model="simpleCheckbox" id="simpleCheckbox" required
+                                   floating-validation/>
+                            <label class="control-label checkbox-inline" for="simpleCheckbox">This Check is required</label>
+                        </div>
 
-                    <div class="btn-group btn-group-lg pull-right" role="group">
-                        <button type="reset" class="btn btn-success" ng-click="floating.$setPristine()">Reset</button>
-                        <button type="submit" class="btn btn-primary">Submit</button>
-                    </div>
+                        <div class="btn-group btn-group-lg pull-right" role="group">
+                            <button type="reset" class="btn btn-success" ng-click="floating.$setPristine()">Reset</button>
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                        </div>
 
-                </form>
+                    </form>
+                </div>
             </div>
         </div>
+
     </section>
 </div>
 
