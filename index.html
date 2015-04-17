@@ -1,127 +1,170 @@
 <!DOCTYPE html>
 <html>
 
-  <head>
+<head>
     <meta charset='utf-8'>
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
     <meta name="description" content="Ngfloatinglabels : floating labels for angular js with floating validation">
 
     <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
 
+    <link rel="stylesheet" type="text/css" href="https://raw.githubusercontent.com/alexnoise79/ngFloatingLabels/master/src/ng-floating-labels.css"/>
+
     <title>Ngfloatinglabels</title>
-  </head>
+</head>
 
-  <body>
+<body>
 
-    <!-- HEADER -->
-    <div id="header_wrap" class="outer">
-        <header class="inner">
-          <a id="forkme_banner" href="https://github.com/alexnoise79/ngFloatingLabels">View on GitHub</a>
+<!-- HEADER -->
+<div id="header_wrap" class="outer">
+    <header class="inner">
+        <a id="forkme_banner" href="https://github.com/alexnoise79/ngFloatingLabels">View on GitHub</a>
 
-          <h1 id="project_title">Ngfloatinglabels</h1>
-          <h2 id="project_tagline">floating labels for angular js with floating validation</h2>
+        <h1 id="project_title">Ngfloatinglabels</h1>
 
-            <section id="downloads">
-              <a class="zip_download_link" href="https://github.com/alexnoise79/ngFloatingLabels/zipball/master">Download this project as a .zip file</a>
-              <a class="tar_download_link" href="https://github.com/alexnoise79/ngFloatingLabels/tarball/master">Download this project as a tar.gz file</a>
-            </section>
-        </header>
-    </div>
+        <h2 id="project_tagline">floating labels for angular js with floating validation</h2>
 
-    <!-- MAIN CONTENT -->
-    <div id="main_content_wrap" class="outer">
-      <section id="main_content" class="inner">
-        <p><a href="https://github.com/alexnoise79/ngFloatingLabels"><img src="https://badge.fury.io/gh/https%3A%2F%2Fgithub.com%2Falexnoise79%2FngFloatingLabels.svg" alt="GitHub version"></a> <a href="http://badge.fury.io/bo/angular-floating-labels"><img src="https://badge.fury.io/bo/angular-floating-labels.svg" alt="Bower version"></a></p>
+        <section id="downloads">
+            <a class="zip_download_link" href="https://github.com/alexnoise79/ngFloatingLabels/zipball/master">Download
+                this project as a .zip file</a>
+            <a class="tar_download_link" href="https://github.com/alexnoise79/ngFloatingLabels/tarball/master">Download
+                this project as a tar.gz file</a>
+        </section>
+    </header>
+</div>
 
-<h1>
-<a id="floating-validation-and-labels-for-angularjs" class="anchor" href="#floating-validation-and-labels-for-angularjs" aria-hidden="true"><span class="octicon octicon-link"></span></a>Floating Validation and Labels for AngularJS</h1>
+<!-- MAIN CONTENT -->
+<div id="main_content_wrap" class="outer">
+    <section id="main_content" class="inner">
+        <p><a href="https://github.com/alexnoise79/ngFloatingLabels"><img
+                src="https://badge.fury.io/gh/https%3A%2F%2Fgithub.com%2Falexnoise79%2FngFloatingLabels.svg"
+                alt="GitHub version"></a> <a href="http://badge.fury.io/bo/angular-floating-labels"><img
+                src="https://badge.fury.io/bo/angular-floating-labels.svg" alt="Bower version"></a></p>
 
-<h1>
-<a id="description" class="anchor" href="#description" aria-hidden="true"><span class="octicon octicon-link"></span></a>Description</h1>
+        <h1>
+            <a id="floating-validation-and-labels-for-angularjs" class="anchor"
+               href="#floating-validation-and-labels-for-angularjs" aria-hidden="true"><span
+                    class="octicon octicon-link"></span></a>Floating Validation and Labels for AngularJS</h1>
 
-<hr>
+        <h1>
+            <a id="description" class="anchor" href="#description" aria-hidden="true"><span
+                    class="octicon octicon-link"></span></a>Description</h1>
 
-<h3>
-<a id="this-module-has-two-directives" class="anchor" href="#this-module-has-two-directives" aria-hidden="true"><span class="octicon octicon-link"></span></a>This module has two directives</h3>
+        <hr>
 
-<ul>
-<li>
-<code>floatingValidation</code>
+        <h3>
+            <a id="this-module-has-two-directives" class="anchor" href="#this-module-has-two-directives"
+               aria-hidden="true"><span class="octicon octicon-link"></span></a>This module has two directives</h3>
 
-<ul>
-<li>which listen for angular validation events and show/hide the floated label</li>
-</ul>
-</li>
-<li>
-<code>floatingLabel</code>
+        <ul>
+            <li>
+                <code>floatingValidation</code>
 
-<ul>
-<li>which show/hide the placeholder as label when type on</li>
-</ul>
-</li>
-</ul>
+                <ul>
+                    <li>which listen for angular validation events and show/hide the floated label</li>
+                </ul>
+            </li>
+            <li>
+                <code>floatingLabel</code>
 
-<h1>
-<a id="installation" class="anchor" href="#installation" aria-hidden="true"><span class="octicon octicon-link"></span></a>Installation</h1>
+                <ul>
+                    <li>which show/hide the placeholder as label when type on</li>
+                </ul>
+            </li>
+        </ul>
 
-<hr>
+        <h1>
+            <a id="installation" class="anchor" href="#installation" aria-hidden="true"><span
+                    class="octicon octicon-link"></span></a>Installation</h1>
 
-<h2>
-<a id="bower" class="anchor" href="#bower" aria-hidden="true"><span class="octicon octicon-link"></span></a>Bower:</h2>
+        <hr>
+
+        <h2>
+            <a id="bower" class="anchor" href="#bower" aria-hidden="true"><span class="octicon octicon-link"></span></a>Bower:
+        </h2>
 
 <pre><code>&gt; bower install angular-floating-labels --save
 </code></pre>
 
-<h1>
-<a id="usage" class="anchor" href="#usage" aria-hidden="true"><span class="octicon octicon-link"></span></a>Usage</h1>
+        <h1>
+            <a id="usage" class="anchor" href="#usage" aria-hidden="true"><span class="octicon octicon-link"></span></a>Usage
+        </h1>
 
-<hr>
+        <hr>
 
-<ul>
-<li>import customizable css in your project</li>
-</ul>
+        <ul>
+            <li>import customizable css in your project</li>
+        </ul>
 
-<div class="highlight highlight-html"><pre>&lt;<span class="pl-ent">link</span> <span class="pl-e">rel</span>=<span class="pl-s"><span class="pl-pds">"</span>stylesheet<span class="pl-pds">"</span></span> <span class="pl-e">href</span>=<span class="pl-s"><span class="pl-pds">"</span>src/ng-floating-labels.css<span class="pl-pds">"</span></span>&gt;</pre></div>
+        <div class="highlight highlight-html">
+            <pre>&lt;<span class="pl-ent">link</span> <span class="pl-e">rel</span>=<span class="pl-s"><span
+                    class="pl-pds">"</span>stylesheet<span class="pl-pds">"</span></span> <span class="pl-e">href</span>=<span
+                    class="pl-s"><span class="pl-pds">"</span>src/ng-floating-labels.css<span
+                    class="pl-pds">"</span></span>&gt;</pre>
+        </div>
 
-<ul>
-<li>import script in your page</li>
-</ul>
+        <ul>
+            <li>import script in your page</li>
+        </ul>
 
-<div class="highlight highlight-html"><pre>&lt;<span class="pl-ent">script</span> <span class="pl-e">src</span>=<span class="pl-s"><span class="pl-pds">"</span>src/ngFloatingLabels.js<span class="pl-pds">"</span></span>&gt;&lt;/<span class="pl-ent">script</span>&gt;</pre></div>
+        <div class="highlight highlight-html">
+            <pre>&lt;<span class="pl-ent">script</span> <span class="pl-e">src</span>=<span class="pl-s"><span
+                    class="pl-pds">"</span>src/ngFloatingLabels.js<span class="pl-pds">"</span></span>&gt;&lt;/<span
+                    class="pl-ent">script</span>&gt;</pre>
+        </div>
 
-<ul>
-<li>inject the module dependency</li>
-</ul>
+        <ul>
+            <li>inject the module dependency</li>
+        </ul>
 
-<div class="highlight highlight-js"><pre>angular.module(<span class="pl-s"><span class="pl-pds">'</span>yourProject<span class="pl-pds">'</span></span>, [<span class="pl-s"><span class="pl-pds">'</span>ngFloatingLabels<span class="pl-pds">'</span></span>]);</pre></div>
+        <div class="highlight highlight-js">
+            <pre>angular.module(<span class="pl-s"><span class="pl-pds">'</span>yourProject<span class="pl-pds">'</span></span>, [<span
+                    class="pl-s"><span class="pl-pds">'</span>ngFloatingLabels<span
+                    class="pl-pds">'</span></span>]);</pre>
+        </div>
 
-<ul>
-<li>include the directive on your input or select element</li>
-</ul>
+        <ul>
+            <li>include the directive on your input or select element</li>
+        </ul>
 
-<div class="highlight highlight-html"><pre>&lt;<span class="pl-ent">input</span> <span class="pl-e">type</span>=<span class="pl-s"><span class="pl-pds">"</span>text<span class="pl-pds">"</span></span> <span class="pl-e">placeholder</span>=<span class="pl-s"><span class="pl-pds">"</span>Simple Text<span class="pl-pds">"</span></span> <span class="pl-e">id</span>=<span class="pl-s"><span class="pl-pds">"</span>simpleText<span class="pl-pds">"</span></span> <span class="pl-e">name</span>=<span class="pl-s"><span class="pl-pds">"</span>simpleText<span class="pl-pds">"</span></span> <span class="pl-e">ng-model</span>=<span class="pl-s"><span class="pl-pds">"</span>simpleText<span class="pl-pds">"</span></span> <span class="pl-e">required</span> <span class="pl-e">floating-validation</span>/&gt;</pre></div>
+        <div class="highlight highlight-html">
+            <pre>&lt;<span class="pl-ent">input</span> <span class="pl-e">type</span>=<span class="pl-s"><span
+                    class="pl-pds">"</span>text<span class="pl-pds">"</span></span> <span
+                    class="pl-e">placeholder</span>=<span class="pl-s"><span class="pl-pds">"</span>Simple Text<span
+                    class="pl-pds">"</span></span> <span class="pl-e">id</span>=<span class="pl-s"><span class="pl-pds">"</span>simpleText<span
+                    class="pl-pds">"</span></span> <span class="pl-e">name</span>=<span class="pl-s"><span
+                    class="pl-pds">"</span>simpleText<span class="pl-pds">"</span></span> <span
+                    class="pl-e">ng-model</span>=<span class="pl-s"><span class="pl-pds">"</span>simpleText<span
+                    class="pl-pds">"</span></span> <span class="pl-e">required</span> <span class="pl-e">floating-validation</span>/&gt;</pre>
+        </div>
 
-<h4>
-<a id="attribute-placeholder-is-required" class="anchor" href="#attribute-placeholder-is-required" aria-hidden="true"><span class="octicon octicon-link"></span></a>attribute placeholder is <em>REQUIRED</em>
-</h4>
+        <h4>
+            <a id="attribute-placeholder-is-required" class="anchor" href="#attribute-placeholder-is-required"
+               aria-hidden="true"><span class="octicon octicon-link"></span></a>attribute placeholder is
+            <em>REQUIRED</em>
+        </h4>
 
-<h4>
-<a id="the-parent-div-of-the-input-field-must-be-positionrelative-see-example-for-detail" class="anchor" href="#the-parent-div-of-the-input-field-must-be-positionrelative-see-example-for-detail" aria-hidden="true"><span class="octicon octicon-link"></span></a>the parent div of the input field must be <code>position:relative</code> (see example for detail)</h4>
+        <h4>
+            <a id="the-parent-div-of-the-input-field-must-be-positionrelative-see-example-for-detail" class="anchor"
+               href="#the-parent-div-of-the-input-field-must-be-positionrelative-see-example-for-detail"
+               aria-hidden="true"><span class="octicon octicon-link"></span></a>the parent div of the input field must
+            be <code>position:relative</code> (see example for detail)</h4>
 
-<h2>
-<a id="example" class="anchor" href="#example" aria-hidden="true"><span class="octicon octicon-link"></span></a>Example</h2>
-      </section>
-    </div>
+        <h2>
+            <a id="example" class="anchor" href="#example" aria-hidden="true"><span class="octicon octicon-link"></span></a>Example
+        </h2>
+    </section>
+</div>
 
-    <!-- FOOTER  -->
-    <div id="footer_wrap" class="outer">
-      <footer class="inner">
+<!-- FOOTER  -->
+<div id="footer_wrap" class="outer">
+    <footer class="inner">
         <p class="copyright">Ngfloatinglabels maintained by <a href="https://github.com/alexnoise79">alexnoise79</a></p>
+
         <p>Published with <a href="https://pages.github.com">GitHub Pages</a></p>
-      </footer>
-    </div>
+    </footer>
+</div>
 
-    
-
-  </body>
+<script type="text/javascript" src="https://raw.githubusercontent.com/alexnoise79/ngFloatingLabels/master/src/ngFloatingLabels.js"/>
+</body>
 </html>
