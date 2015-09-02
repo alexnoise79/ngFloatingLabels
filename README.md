@@ -45,3 +45,6 @@ angular.module('yourProject', ['ngFloatingLabels']);
 Example
 ---------
 -http://alexnoise79.github.io/ngFloatingLabels
+---------
+
+this software is released under MIT license
