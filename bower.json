@@ -2,7 +2,7 @@
   "name": "ngFloatingLabels",
   "private": false,
   "main": "src/ngFloatingLabels.js",
-  "version": "0.0.1",
+  "version": "1.0.1",
   "description": "Floating Labels and Floating Validation for AngularJS",
   "repository": "https://github.com/alexnoise79/ngFloatingLabels",
   "license": "MIT",
